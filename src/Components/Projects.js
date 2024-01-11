@@ -20,42 +20,54 @@ function Projects() {
             <div className="article-container">
               <img src={Proj1} alt="Projeto 1" className="project-img" />
             </div>
-            <h2 className="experience-sub-title project-title">Project One</h2>
+            <h2 className="experience-sub-title project-title">Landing Page ReactJS</h2>
             <div className="btn-container">
-              <button className="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github
-              </button>
-              <button className="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live Demo
-              </button>
+              <a href="https://github.com/danielbelle/react-js-landing-page-restaurant" target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-color-2 project-btn">
+                  Github
+                </button>
+              </a>
+              <a href="https://react-js-landing-page-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  Live Demo
+                </button>
+              </a>
             </div>
           </div>
           <div className="details-container color-container">
             <div className="article-container">
               <img src={Proj2} alt="Projeto 2" className="project-img" />
             </div>
-            <h2 className="experience-sub-title project-title">Project Two</h2>
+            <h2 className="experience-sub-title project-title">Consumo de API Externa</h2>
             <div className="btn-container">
-              <button className="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github
-              </button>
-              <button className="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live Demo
-              </button>
+              <a href="https://github.com/danielbelle/buscador-cep" target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-color-2 project-btn">
+                  Github
+                </button>
+              </a>
+              <a href="https://buscador-cep-pink-pi.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
             </div>
           </div>
           <div className="details-container color-container">
             <div className="article-container">
               <img src={Proj3} alt="Projeto 3" className="project-img" />
             </div>
-            <h2 className="experience-sub-title project-title">Project Three</h2>
+            <h2 className="experience-sub-title project-title">CRUD PHP Pedidos</h2>
             <div className="btn-container">
-              <button className="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github
-              </button>
-              <button className="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live Demo
-              </button>
+              <a href="https://github.com/danielbelle/api-orders" target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-color-2 project-btn">
+                  Github
+                </button>
+              </a>
+              <a href="https://www.youtube.com/watch?v=G1Brhqz-PqM" target="_blank" rel="noopener noreferrer">
+                <button className="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -63,7 +75,7 @@ function Projects() {
       <Link to='experience' spy={true} smooth={true} offset={0} duration={300}>
         <img src={Arrow} alt="Ícone seta" className="icon arrow" />
       </Link>
-    </section>
+    </section >
   )
 }
 

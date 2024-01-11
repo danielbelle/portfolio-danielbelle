@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { HiOutlineBars3 } from "react-icons/hi2"
+import { Box, Drawer, ListItem, ListItemButton, ListItemText, List } from "@mui/material"
 import { Link } from 'react-scroll'
 
 function Nav() {
@@ -7,43 +9,27 @@ function Nav() {
 
   const menuOptions = [
     {
-      text: "Início",
-      to: "home",
-      icon: ''
+      text: "Vamos Subir?",
+      to: "nav"
     },
     {
-      text: "Sobre",
-      to: "about",
-      icon: ''
+      text: "Saiba +",
+      to: "about"
     },
     {
-      text: "Como Funciona",
-      to: "work",
-      icon: ''
+      text: "Projetos",
+      to: "projects"
     },
     {
-      text: "Depoimentos",
-      to: "testimonials",
-      icon: ''
+      text: "Jobs",
+      to: "experience"
     },
     {
-      text: "Contato",
-      to: "contact",
-      icon: ''
-    },
-    {
-      text: "Carrinho de Compras",
-      to: "contact",
-      icon: ''
+      text: "Bora Conversar?",
+      to: "contact"
     }
   ]
 
-  const toggleMenu = () => {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-  }
 
 
   return (
@@ -58,25 +44,33 @@ function Nav() {
             <li><Link to='contact' spy={true} smooth={true} offset={0} duration={300}>Bora Conversar?</Link></li>
           </ul>
         </div>
+
+        <div className='navbar-menu-container'>
+          <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+        </div>
+
+        <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor='right'>
+          <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={() => setOpenMenu(false)}
+            onKeyDown={() => setOpenMenu(false)}
+          >
+            <List>
+              {menuOptions.map((item) => (
+                <Link to={(item.to)} spy={true} smooth={true} offset={0} duration={500}>
+                  <ListItem key={item.text} disablePadding>
+                    <ListItemButton>
+                      <ListItemText primary={item.text} />
+                    </ListItemButton>
+                  </ListItem>
+                </Link>
+              ))}
+            </List>
+          </Box>
+
+        </Drawer>
       </nav>
-      {/*
-      <nav id="hamburger-nav">
-        <div className="logo">Daniel Henrique Bellé</div>
-        <div className="hamburger-menu">
-          <div className="hamburger-icon" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className="menu-links">
-            <li><a href="#about" onClick={toggleMenu}>Saiba +</a></li>
-            <li><a href="#experience" onClick={toggleMenu}>Jobs</a></li>
-            <li><a href="#projects" onClick={toggleMenu}>Projetos</a></li>
-            <li><a href="#contact" onClick={toggleMenu}>Bora Conversar?</a></li>
-          </div>
-        </div> 
-      </nav> 
-      */}
     </div>
   )
 }

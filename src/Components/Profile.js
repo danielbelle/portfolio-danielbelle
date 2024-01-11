@@ -2,12 +2,10 @@ import React from 'react'
 import ProfilePic from '../Assets/profile-pic.png'
 import LinkedIn from '../Assets/linkedin.png'
 import GitHub from '../Assets/github.png'
-import Resume from '../Assets/resume-example.pdf'
+import Resume from '../Assets/resume-danielbelle-full-stack.pdf.pdf'
 import { Link } from 'react-scroll'
 
 function Profile() {
-
-
 
   return (
     <section id="profile">
