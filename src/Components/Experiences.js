@@ -1,10 +1,15 @@
 import React from 'react'
 import Checkmark from '../Assets/checkmark.png'
 import Arrow from '../Assets/arrow.png'
+import ArrowUp from '../Assets/arrow-up.png'
+import { Link } from 'react-scroll'
 
 function Experiences() {
   return (
     <section id="experience">
+      <Link to='projects' spy={true} smooth={true} offset={0} duration={300}>
+        <img src={ArrowUp} alt="Ícone seta" className="icon arrow-up" />
+      </Link>
       <p className="section__text__p1">Saiba com o que</p>
       <h1 className="title">Trabalhei</h1>
       <div className="experience-details-container">
@@ -91,7 +96,9 @@ function Experiences() {
           </div>
         </div>
       </div>
-      <img src={Arrow} alt="Ícone seta" className="icon arrow" onclick="location.href='./#projects'" />
+      <Link to='contact' spy={true} smooth={true} offset={0} duration={300}>
+        <img src={Arrow} alt="Ícone seta" className="icon arrow" />
+      </Link>
     </section>
   )
 }

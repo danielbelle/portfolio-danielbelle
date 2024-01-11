@@ -3,10 +3,15 @@ import Proj1 from '../Assets/project-1.png'
 import Proj2 from '../Assets/project-2.png'
 import Proj3 from '../Assets/project-3.png'
 import Arrow from '../Assets/arrow.png'
+import ArrowUp from '../Assets/arrow-up.png'
+import { Link } from 'react-scroll'
 
 function Projects() {
   return (
     <section id="projects">
+      <Link to='about' spy={true} smooth={true} offset={0} duration={300}>
+        <img src={ArrowUp} alt="Ícone seta" className="icon arrow-up" />
+      </Link>
       <p className="section__text__p1">Mais Recentes</p>
       <h1 className="title">Projetos</h1>
       <div className="experience-details-container">
@@ -55,7 +60,9 @@ function Projects() {
           </div>
         </div>
       </div>
-      <img src={Arrow} alt="Ícone seta" className="icon arrow" onclick="location.href='./#contact'" />
+      <Link to='experience' spy={true} smooth={true} offset={0} duration={300}>
+        <img src={Arrow} alt="Ícone seta" className="icon arrow" />
+      </Link>
     </section>
   )
 }

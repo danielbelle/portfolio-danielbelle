@@ -58,6 +58,20 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+.nav-links li {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+.nav-links li:hover {
+  cursor: pointer;
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
 .logo {
   font-size: 2rem;
 }
@@ -293,6 +307,12 @@ section {
   bottom: 2.5rem;
 }
 
+.arrow-up {
+  position: absolute;
+  right: -5rem;
+  top: 2.5rem;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -357,6 +377,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .color-container {
@@ -418,6 +439,35 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+.contact-form-container {
+  background-color: white;
+  max-width: 700px;
+  width: 100%;
+  align-items: center;
+  border-radius: 5rem;
+}
+
+.contact-form-container input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+}
+
+.submit-button {
+  background-color: #fff;
+  border-radius: 5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #000;
+  transition: 0.2s;
+  align-items: center;
+  justify-content: center;
 }
 
 /* FOOTER SECTION */

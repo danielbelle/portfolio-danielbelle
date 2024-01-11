@@ -2,8 +2,13 @@ import React from 'react'
 import ProfilePic from '../Assets/profile-pic.png'
 import LinkedIn from '../Assets/linkedin.png'
 import GitHub from '../Assets/github.png'
+import Resume from '../Assets/resume-example.pdf'
+import { Link } from 'react-scroll'
 
 function Profile() {
+
+
+
   return (
     <section id="profile">
       <div className="section__pic-container">
@@ -14,18 +19,26 @@ function Profile() {
         <h1 className="title">Daniel H. Bellé</h1>
         <p className="section__text__p2">Dev Full Stack JavaScript</p>
         <div className="btn-container">
-          <button className="btn btn-color-2" onclick="window.open('../Assets/resume-example.pdf')</div>">
-            Download CV
-          </button>
-          <button className="btn btn-color-1" onclick="location.href='../#contact'">
-            Bora Conversar?
-          </button>
+          <a href={Resume} target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-color-2" >
+              Download CV
+            </button>
+          </a>
+          <Link to='contact' spy={true} smooth={true} offset={0} duration={300}>
+            <button className="btn btn-color-1">
+              Bora Conversar?
+            </button>
+          </Link>
         </div>
         <div id="socials-container">
-          <img src={LinkedIn} alt="Meu perfil do LinkedIn" className="icon"
-            onclick="location.href='https://linkedin.com/henrique.danielb'" />
-          <img src={GitHub} alt="Meu perfil do GitHub" className="icon"
-            onclick="location.href='https://github.com/danielbelle'" />
+          <a href="http://www.linkedin.com/in/danielhenriquebelle/" target="_blank" rel="noopener noreferrer">
+            <img src={LinkedIn} alt="Meu perfil do LinkedIn" className="icon" />
+          </a>
+          <a href="https://github.com/danielbelle" target="_blank" rel="noopener noreferrer">
+            <img src={GitHub} alt="Meu perfil do GitHub" className="icon" />
+          </a>
+
+
         </div>
       </div>
     </section>

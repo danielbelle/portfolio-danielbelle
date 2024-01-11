@@ -3,18 +3,33 @@ import PicAbout from '../Assets/about-pic.png'
 import Experience from '../Assets/experience.png'
 import Education from '../Assets/education.png'
 import Arrow from '../Assets/arrow.png'
+import ArrowUp from '../Assets/arrow-up.png'
+import { Link } from 'react-scroll'
 
 function About() {
   return (
     <section id="about">
+      <Link to='nav' spy={true} smooth={true} offset={0} duration={300}>
+        <img src={ArrowUp} alt="Ícone seta" className="icon arrow-up" />
+      </Link>
       <p className="section__text__p1">Conheça Mais</p>
       <h1 className="title">Sobre mim</h1>
       <div className="section-container">
-        <div className="section__pic-container">
+        {/**<div className="section__pic-container">
           <img src={PicAbout} alt="Foto de perfil" className="about-pic" />
-        </div>
+        </div>  */}
         <div className="about-details-container">
           <div className="about-containers">
+            <div className="details-container">
+              <img src={Experience} alt="Ícone de experiência" className="icon" />
+              <h3>Jobs</h3>
+              <p>1+ anos <br />Desenvolvimento Full Stack PHP</p>
+            </div>
+            <div className="details-container">
+              <img src={Experience} alt="Ícone de experiência" className="icon" />
+              <h3>Jobs</h3>
+              <p>1+ anos <br />Desenvolvimento Full Stack PHP</p>
+            </div>
             <div className="details-container">
               <img src={Experience} alt="Ícone de experiência" className="icon" />
               <h3>Jobs</h3>
@@ -38,7 +53,9 @@ function About() {
           </div>
         </div>
       </div>
-      <img src={Arrow} alt="Ícone seta" className="icon arrow" onclick="location.href='./#experience'" />
+      <Link to='projects' spy={true} smooth={true} offset={0} duration={300}>
+        <img src={Arrow} alt="Ícone seta" className="icon arrow" />
+      </Link>
     </section>
   )
 }

@@ -1,6 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 
 function Nav() {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const menuOptions = [
+    {
+      text: "Início",
+      to: "home",
+      icon: ''
+    },
+    {
+      text: "Sobre",
+      to: "about",
+      icon: ''
+    },
+    {
+      text: "Como Funciona",
+      to: "work",
+      icon: ''
+    },
+    {
+      text: "Depoimentos",
+      to: "testimonials",
+      icon: ''
+    },
+    {
+      text: "Contato",
+      to: "contact",
+      icon: ''
+    },
+    {
+      text: "Carrinho de Compras",
+      to: "contact",
+      icon: ''
+    }
+  ]
 
   const toggleMenu = () => {
     const menu = document.querySelector(".menu-links");
@@ -16,13 +52,14 @@ function Nav() {
         <div className="logo">Daniel Henrique Bellé</div>
         <div>
           <ul className="nav-links">
-            <li><a href="#about">Saiba +</a></li>
-            <li><a href="#experience">Jobs</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Bora Conversar?</a></li>
+            <li><Link to='about' spy={true} smooth={true} offset={0} duration={300}>Saiba +</Link></li>
+            <li><Link to='projects' spy={true} smooth={true} offset={0} duration={300}>Projetos</Link></li>
+            <li><Link to='experience' spy={true} smooth={true} offset={0} duration={300}>Jobs</Link></li>
+            <li><Link to='contact' spy={true} smooth={true} offset={0} duration={300}>Bora Conversar?</Link></li>
           </ul>
         </div>
       </nav>
+      {/*
       <nav id="hamburger-nav">
         <div className="logo">Daniel Henrique Bellé</div>
         <div className="hamburger-menu">
@@ -37,8 +74,9 @@ function Nav() {
             <li><a href="#projects" onClick={toggleMenu}>Projetos</a></li>
             <li><a href="#contact" onClick={toggleMenu}>Bora Conversar?</a></li>
           </div>
-        </div>
-      </nav>
+        </div> 
+      </nav> 
+      */}
     </div>
   )
 }
