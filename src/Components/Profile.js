@@ -8,7 +8,7 @@ import { Link } from 'react-scroll'
 function Profile() {
 
   return (
-    <section id="profile">
+    <div id="profile" className='about-section-container'>
       <div className="section__pic-container">
         <img src={ProfilePic} alt="Foto de perfil do Daniel" />
       </div>
@@ -39,7 +39,7 @@ function Profile() {
 
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -26,8 +26,6 @@ function Nav() {
     }
   ]
 
-
-
   return (
     <nav id='nav'>
       <div className="logo">Daniel Henrique Bellé</div>
