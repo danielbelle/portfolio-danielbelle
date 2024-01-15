@@ -4,18 +4,19 @@ import LinkedIn from '../Assets/linkedin.png'
 import GitHub from '../Assets/github.png'
 import Resume from '../Assets/resume-danielbelle-full-stack.pdf.pdf'
 import { Link } from 'react-scroll'
+import './Styles/Profile.css'
 
 function Profile() {
 
   return (
-    <div id="profile" className='about-section-container'>
-      <div className="section__pic-container">
+    <div id="profile" className='profile-box'>
+      <div className="profile-pic-container">
         <img src={ProfilePic} alt="Foto de perfil do Daniel" />
       </div>
-      <div className="section__text">
-        <p className="section__text__p1">Oii, Aqui é o</p>
-        <h1 className="title">Daniel H. Bellé</h1>
-        <p className="section__text__p2">Dev Full Stack JavaScript</p>
+      <div className="profile-text">
+        <p className="profile-text-p1">Oii, Aqui é o</p>
+        <h1 className="profile-title">Daniel H. Bellé</h1>
+        <p className="profile-text-p2">Dev Full Stack JavaScript</p>
         <div className="btn-container">
           <a href={Resume} target="_blank" rel="noopener noreferrer">
             <button className="btn btn-color-2" >

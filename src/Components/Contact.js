@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import Email from '../Assets/email.png'
-import LinkedIn from '../Assets/linkedin.png'
 import emailjs from '@emailjs/browser'
 
 function Contact() {
@@ -44,10 +43,6 @@ function Contact() {
             </div>
           </form>
         </div>
-        {/* <div className="contact-info-container">
-          <img src={LinkedIn} alt="LinkedIn icon" className="icon contact-icon" />
-          <p><a href="http://www.linkedin.com/in/danielhenriquebelle/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-          </div>*/}
       </div>
     </section>
   )

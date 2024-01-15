@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { HiOutlineBars3 } from "react-icons/hi2"
 import { Box, Drawer, ListItem, ListItemButton, ListItemText, List } from "@mui/material"
 import { Link } from 'react-scroll'
+import './Styles/Nav.css'
 
 function Nav() {
 
@@ -48,8 +49,8 @@ function Nav() {
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}
         >
-          <List>
-            {menuOptions.map((item) => (
+          {menuOptions.map((item) => (
+            <List key={item}>
               <Link to={(item.to)} spy={true} smooth={true} offset={0} duration={500}>
                 <ListItem key={item.text} disablePadding>
                   <ListItemButton>
@@ -57,8 +58,8 @@ function Nav() {
                   </ListItemButton>
                 </ListItem>
               </Link>
-            ))}
-          </List>
+            </List>
+          ))}
         </Box>
       </Drawer>
     </nav>
