@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Experience from '../Assets/experience.png'
 import Education from '../Assets/education.png'
 import Arrow from '../Assets/arrow.png'
@@ -7,6 +7,9 @@ import { Link } from 'react-scroll'
 import './Styles/About.css'
 
 function About() {
+  
+  const [showProject, setShowProject] = useState(false);
+
   return (
     <div id="about" className='about-section'>
       <div>
@@ -61,7 +64,7 @@ function About() {
           <img src={Arrow} alt="Ícone seta" className="icon arrow" />
         </Link>
       </div>
-    </div >
+    </div>
   )
 }
 

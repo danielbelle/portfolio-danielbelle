@@ -1,17 +1,18 @@
-/* SECTIONS */
+/* ABOUT SECTION */
 .about-section {
   display: flex;
   position: relative;
   height: 80vh;
-  min-height: 400px;
+  min-height: 500px;
   margin: 0 30px;
 }
 
 .arrow-up {
-  position:relative;
+  position: relative;
   left: 100%;
   top: 2.5rem;
 }
+
 /*
 .text-box {
 }
@@ -26,9 +27,10 @@
   margin-bottom: 15px;
   text-align: center;
 }
+
+
 /*
-.about-container {
-}
+.about-container {}
 
 .about-details-container {
 }
@@ -72,7 +74,7 @@
   }
 
   .title {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -81,9 +83,6 @@
     font-size: 1.3rem;
   }
 
-  .title {
-    font-size: 2.8rem;
-  }
 
 }
 
@@ -123,7 +122,6 @@
   .details-container {
     margin-bottom: 0.5rem;
   }
-
 }
 
 @media (max-width: 600px) {}
