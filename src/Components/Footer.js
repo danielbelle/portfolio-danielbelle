@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
+import './Styles/Footer.css'
 
 function Footer() {
 
@@ -13,9 +14,8 @@ function Footer() {
   }, [])
 
   return (
-
-    <footer>
-      <nav>
+    <footer id="footer">
+      <nav className='footer-nav'>
         <div className="nav-links-container">
           <ul className="nav-links">
             <li><Link to='nav' spy={true} smooth={true} offset={0} duration={300}>Vamos Para Cima?</Link></li>
@@ -26,7 +26,10 @@ function Footer() {
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; {date} Daniel Henrique Bellé. Todos os direitos reservados.</p>
+      <div className='footer-text'>
+        <p>Copyright &#169; {date} Daniel Henrique Bellé. Todos os direitos reservados.
+        </p>
+      </div>
     </footer>
   )
 }

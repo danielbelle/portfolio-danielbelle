@@ -17,9 +17,9 @@ function Projects() {
         <div className='content-box'>
           <p className="project-text-p1">Mais Recentes</p>
           <h1 className="project-up-title">Projetos</h1>
-          <div className="experience-details-container">
+          <div className="experience-details-container-project">
             <div className="project-containers">
-              <div className="details-container color-container">
+              <div className="details-container-project color-container box-1">
                 <div className="article-container">
                   <img src={Proj1} alt="Projeto 1" className="project-img" />
                 </div>
@@ -38,7 +38,7 @@ function Projects() {
                 </div>
               </div>
 
-              <div className="details-container color-container">
+              <div className="details-container-project color-container box-2">
                 <div className="article-container">
                   <img src={Proj2} alt="Projeto 2" className="project-img" />
                 </div>
@@ -56,7 +56,7 @@ function Projects() {
                   </a>
                 </div>
               </div>
-              <div className="details-container color-container">
+              <div className="details-container-project color-container box-3">
                 <div className="article-container">
                   <img src={Proj3} alt="Projeto 3" className="project-img" />
                 </div>
@@ -75,7 +75,7 @@ function Projects() {
                 </div>
               </div>
 
-              <div className="details-container color-container extra-box">
+              <div className="details-container-project color-container box-4">
                 <div className="article-container">
                   <img src={Proj3} alt="Projeto 3" className="project-img" />
                 </div>

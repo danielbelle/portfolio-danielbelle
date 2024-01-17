@@ -13,10 +13,12 @@ function App() {
       <Nav />
       <Profile />
       <About />
-      <Projects />{/*S
-      <Experiences />
+      <Projects />
+      <Footer />{/*
       <Contact />
-      <Footer />*/}
+      
+      <Experiences />
+      */}
     </div>
   );
 }
