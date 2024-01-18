@@ -16,7 +16,7 @@ function Contact() {
     }
 
     try {
-      emailjs.sendForm('service_s8nljg4', 'template_v0sr4jm', form.current, '2ip1oI5hY4jTjN8JS').then((result) => {
+      emailjs.sendForm('service_s8nljg4', 'template_gond1fs', form.current, '2ip1oI5hY4jTjN8JS').then((result) => {
         alert('Seu e-mail foi recebido, logo estaremos respondendo! Até mais!')
       }, (error) => {
         alert(error.text)
