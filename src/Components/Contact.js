@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import Email from '../Assets/email.png'
 import emailjs from '@emailjs/browser'
+import './Styles/Contact.css'
 
 function Contact() {
   const form = useRef();
@@ -31,17 +32,19 @@ function Contact() {
   }
   return (
     <section id="contact">
-      <p className="section__text__p1">Me Encaminhe Seu</p>
-      <h1 className="title">E-mail</h1>
-      <div className="contact-info-upper-container">
-        <div className="contact-info-container">
-          <img src={Email} alt="Ícone E-mail" className="icon contact-icon" />
-          <form ref={form} onSubmit={sendEmail}>
-            <div className='contact-form-container'>
-              <input type='email' name='user_email' value={input} onChange={(e) => setInput(e.target.value)} placeholder='seu-email@gmail.com'></input>
-              <input className='submit-button' type='submit' value={'Enviar'} />
-            </div>
-          </form>
+      <div className='contact-box'>
+        <p className="contact-text-p1">Me Encaminhe Seu</p>
+        <h1 className="title">E-mail</h1>
+        <div className="contact-info-upper-container">
+          <div className="contact-info-container">
+            <img src={Email} alt="Ícone E-mail" className="icon contact-icon" />
+            <form ref={form} onSubmit={sendEmail}>
+              <div className='contact-form-container'>
+                <input type='email' name='user_email' value={input} onChange={(e) => setInput(e.target.value)} placeholder='seu-email@gmail.com'></input>
+                <input className='submit-button' type='submit' value={'Enviar'} />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

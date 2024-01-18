@@ -4,7 +4,7 @@ footer {
   height: 26vh;
   min-height: 90px;
   margin: 0 1rem;
-  margin-top: 250px;
+  margin-top: -10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -24,20 +24,21 @@ footer p {
 /* RESPONSIVE */
 @media (max-width: 1330px) {
   footer {
-    margin-top: 270px;
+    margin-top: -50px;
   }
 
 }
 
 @media (max-width: 1000px) {
   footer {
-    margin-top: 470px;
+    margin-top: -100px;
   }
 
   footer p {
     font-size: 12px;
   }
-  .box-2{
+
+  .box-2 {
     display: none;
   }
 
@@ -45,13 +46,13 @@ footer p {
 
 @media (max-width: 800px) {
   footer {
-    margin-top: 280px;
+    margin-top: -200px;
   }
 }
 
 @media (max-width: 600px) {
   footer {
-    margin-top: 150px;
+    margin-top: -200px;
   }
 
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Experience from '../Assets/experience.png'
 import Education from '../Assets/education.png'
 import Arrow from '../Assets/arrow.png'
@@ -7,8 +7,6 @@ import { Link } from 'react-scroll'
 import './Styles/About.css'
 
 function About() {
-  
-  const [showProject, setShowProject] = useState(false);
 
   return (
     <div id="about" className='about-section'>
@@ -29,7 +27,7 @@ function About() {
                   Atuei como desenvolvedor Full Stack JavaScript e PHP por 1 ano e também desenvolvo sites freelancer.
                 </p>
                 <p>
-                  Neste caminho já dei muito DELETE no PostgreSQL sem utilizar WHERE (triste haha), comecei muitos projetos nomeando variáveis em português e terminei em inglês, commitei no Github sem debugar e fazer testes (vergonha) e ganhei o premio do usuário que mais pesquisou mensagens de erro StackOverflow ao invés de ler a documentação oficial (risos).
+                  Neste caminho já dei muito DELETE no PostgreSQL sem utilizar WHERE (triste haha), comecei muitos projetos nomeando variáveis em português e terminei em inglês, dei muitos commits no GitHub sem debugar e fazer testes (vergonha) e ganhei o premio do usuário que mais pesquisou mensagens de erro StackOverflow ao invés de ler a documentação oficial (risos).
                 </p>
                 <p>
                   E nas horas vagas gosto de ler livros de Ficção Científica.

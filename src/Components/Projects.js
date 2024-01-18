@@ -96,7 +96,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <Link to='experience' spy={true} smooth={true} offset={0} duration={300}>
+        <Link to='contact' spy={true} smooth={true} offset={0} duration={300}>
           <img src={Arrow} alt="Ícone seta" className="icon arrow" />
         </Link>
       </div>
