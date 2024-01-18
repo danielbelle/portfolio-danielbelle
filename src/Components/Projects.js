@@ -1,7 +1,7 @@
 import React from 'react'
 import Proj1 from '../Assets/project-1.png'
 import Proj2 from '../Assets/project-2.png'
-import Proj3 from '../Assets/project-3.png'
+import Proj3 from '../Assets/project-3.gif'
 import Arrow from '../Assets/arrow.png'
 import ArrowUp from '../Assets/arrow-up.png'
 import { Link } from 'react-scroll'
@@ -60,7 +60,7 @@ function Projects() {
                 <div className="article-container">
                   <img src={Proj3} alt="Projeto 3" className="project-img" />
                 </div>
-                <h2 className="experience-sub-title project-title">CRUD PHP Pedidos</h2>
+                <h2 className="experience-sub-title project-title">CRUD Pedidos PHP, com 3 Endpoints  CodeIgniter e MySQL</h2>
                 <div className="btn-container">
                   <a href="https://github.com/danielbelle/api-orders" target="_blank" rel="noopener noreferrer">
                     <button className="btn btn-color-2 project-btn">
