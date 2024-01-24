@@ -9,8 +9,10 @@ import './Styles/Projects.css'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import "./Styles/Carousel.css"
 
-function Projects() {
+function Carousel() {
+
 
   const carouselProjects = [
     {
@@ -85,12 +87,11 @@ function Projects() {
       }
     ]
   };
-
   return (
     <div id="projects" className='projects-section'>
-      <Link to='about' spy={true} smooth={true} offset={0} duration={300}>
+      {/*<Link to='about' spy={true} smooth={true} offset={0} duration={300}>
         <img src={ArrowUp} alt="Ícone seta" className="icon arrow-up" />
-      </Link>
+  </Link>*/}
       <div className='content-box'>
         <p className="project-text-p1">Mais Recentes</p>
         <h1 className="project-up-title">Projetos</h1>
@@ -121,11 +122,8 @@ function Projects() {
           </div>
         </div>
       </div>
-      <Link to='contact' spy={true} smooth={true} offset={0} duration={300}>
-        <img src={Arrow} alt="Ícone seta" className="icon arrow" />
-      </Link>
-    </div >
+    </div>
   )
 }
 
-export default Projects
+export default Carousel
