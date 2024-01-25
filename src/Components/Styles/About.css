@@ -7,6 +7,10 @@
   margin: 0 30px;
 }
 
+.inline {
+  display: contents;
+}
+
 .arrow-up {
   position: relative;
   left: 100%;
@@ -102,8 +106,14 @@
     margin-top: 1rem;
   }
 
+  .inline {
+    display: inline;
+  }
+
   .details-container {
-    padding: 1rem;
+    margin: 0.5rem;
+    min-width: 250px;
+    min-height: 200px;
   }
 
 }
@@ -115,9 +125,6 @@
     align-items: center;
   }
 
-  .details-history-containers {
-    display: inline;
-  }
 
   .details-container {
     margin-bottom: 0.5rem;

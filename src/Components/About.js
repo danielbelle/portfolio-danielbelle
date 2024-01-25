@@ -34,25 +34,29 @@ function About() {
                 </p>
               </div>
               <div className="details-history-containers">
-                <div className="details-container">
-                  <img src={Experience} alt="Ícone de experiência" className="icon" />
-                  <h3>Duarte's Digital Soluctions</h3>
-                  <p>1+ anos <br />Web Developer</p>
+                <div className='inline'>
+                  <div className="details-container">
+                    <img src={Experience} alt="Ícone de experiência" className="icon" />
+                    <h3>Duarte's Digital Soluctions</h3>
+                    <p>1+ anos <br />Web Developer</p>
+                  </div>
+                  <div className="details-container">
+                    <img src={Experience} alt="Ícone de experiência" className="icon" />
+                    <h3>Pieta.tech</h3>
+                    <p>1+ anos <br />Front-end ReactJS</p>
+                  </div>
                 </div>
-                <div className="details-container">
-                  <img src={Experience} alt="Ícone de experiência" className="icon" />
-                  <h3>Pieta.tech</h3>
-                  <p>1+ anos <br />Front-end ReactJS</p>
-                </div>
-                <div className="details-container">
-                  <img src={Experience} alt="Ícone de experiência" className="icon" />
-                  <h3>ControlWare</h3>
-                  <p>1+ anos <br />Desenvolvimento Full Stack PHP e JS</p>
-                </div>
-                <div className="details-container">
-                  <img src={Education} alt="Ícone de educação" className="icon" />
-                  <h3>Engenharia Elétrica</h3>
-                  <p>Universidade Federal de Santa Catarina</p>
+                <div className='inline'>
+                  <div className="details-container">
+                    <img src={Experience} alt="Ícone de experiência" className="icon" />
+                    <h3>ControlWare</h3>
+                    <p>1+ anos <br />Desenvolvimento Full Stack PHP e JS</p>
+                  </div>
+                  <div className="details-container">
+                    <img src={Education} alt="Ícone de educação" className="icon" />
+                    <h3>Engenharia Elétrica</h3>
+                    <p>Universidade Federal de Santa Catarina</p>
+                  </div>
                 </div>
               </div>
             </div>

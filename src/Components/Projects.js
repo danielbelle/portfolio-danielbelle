@@ -60,20 +60,20 @@ function Projects() {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1130,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 0 ,
+          infinite: false,
           dots: true
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0
         }
       },
       {
@@ -98,7 +98,7 @@ function Projects() {
           <div className="project-containers">
             <Slider {...settings}>
               {carouselProjects.map((d) => (
-                <div key={d.key} className="details-container-project color-container">
+                <div key={d.key} className="details-container-project">
                   <div className="article-container">
                     <img src={d.img} alt="Projeto 1" className="project-img" />
                   </div>
