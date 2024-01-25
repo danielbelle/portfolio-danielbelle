@@ -93,13 +93,13 @@
 @media (max-width: 800px) {
 
   .contact-box {
-    margin-top: 250px;
+    margin-top: 300px;
   }
 }
 
 @media (max-width: 600px) {
   .contact-box {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
 

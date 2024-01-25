@@ -181,12 +181,27 @@
     min-height: 400px;
     margin-top: 500px;
   }
+
+  .project-btn {
+    font-size: 0.8rem;
+    margin: -1px;
+  }
+  .project-btn {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 600px) {
   .projects-section {
     margin-top: 500px;
   }
+
+  .project-btn {
+    margin-bottom: 15px;
+  }
+
 }
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+
+}

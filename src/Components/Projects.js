@@ -62,25 +62,34 @@ function Projects() {
       {
         breakpoint: 1130,
         settings: {
+          speed: 500,
           slidesToShow: 2,
-          slidesToScroll: 0 ,
+          slidesToScroll: 1,
+          initialSlide: 0,
           infinite: false,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
+          dots: true,
+          infinite: false,
+          speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 0
+          initialSlide: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
+          dots: true,
+          infinite: false,
+          speed: 500,
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          initialSlide: 1
         }
       }
     ]
