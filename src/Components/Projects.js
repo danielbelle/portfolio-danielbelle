@@ -3,6 +3,7 @@ import Proj1 from '../Assets/project-1.png'
 import Proj2 from '../Assets/project-2.png'
 import Proj3 from '../Assets/project-3.gif'
 import Proj4 from '../Assets/project-4.png'
+import Proj5 from '../Assets/project-5.png'
 import Arrow from '../Assets/arrow.png'
 import ArrowUp from '../Assets/arrow-up.png'
 import { Link } from 'react-scroll'
@@ -36,18 +37,18 @@ function Projects() {
       demo: "https://www.youtube.com/watch?v=G1Brhqz-PqM"
     },
     {
-      key: '2',
+      key: '4',
       img: `${Proj4}`,
       name: "Quiz ReactJS",
       github: "https://github.com/danielbelle/quiz-reactjs",
       demo: "https://quiz-reactjs-ecru.vercel.app/"
     },
     {
-      key: '3',
-      img: `${Proj3}`,
-      name: "CRUD Pedidos PHP, com 3 Endpoints CodeIgniter e MySQL",
-      github: "https://github.com/danielbelle/api-orders",
-      demo: "https://www.youtube.com/watch?v=G1Brhqz-PqM"
+      key: '5',
+      img: `${Proj5}`,
+      name: "Search Bar Integrado com API",
+      github: "https://github.com/danielbelle/search-bar-API",
+      demo: "https://search-bar-api.vercel.app/"
     }
   ];
 
