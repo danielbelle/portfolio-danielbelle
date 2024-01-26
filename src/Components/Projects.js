@@ -2,6 +2,7 @@ import React from 'react'
 import Proj1 from '../Assets/project-1.png'
 import Proj2 from '../Assets/project-2.png'
 import Proj3 from '../Assets/project-3.gif'
+import Proj4 from '../Assets/project-4.gif'
 import Arrow from '../Assets/arrow.png'
 import ArrowUp from '../Assets/arrow-up.png'
 import { Link } from 'react-scroll'
@@ -36,10 +37,10 @@ function Projects() {
     },
     {
       key: '2',
-      img: `${Proj2}`,
-      name: "Consumo de API Externa",
-      github: "https://github.com/danielbelle/buscador-cep",
-      demo: "https://buscador-cep-pink-pi.vercel.app/"
+      img: `${Proj4}`,
+      name: "Quiz ReactJS",
+      github: "https://github.com/danielbelle/quiz-reactjs",
+      demo: "https://quiz-reactjs-ecru.vercel.app/"
     },
     {
       key: '3',
