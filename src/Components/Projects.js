@@ -4,6 +4,7 @@ import Proj2 from '../Assets/project-2.png'
 import Proj3 from '../Assets/project-3.gif'
 import Proj4 from '../Assets/project-4.png'
 import Proj5 from '../Assets/project-5.png'
+import Proj6 from '../Assets/project-6.png'
 import Arrow from '../Assets/arrow.png'
 import ArrowUp from '../Assets/arrow-up.png'
 import { Link } from 'react-scroll'
@@ -31,10 +32,10 @@ function Projects() {
     },
     {
       key: '3',
-      img: `${Proj3}`,
-      name: "CRUD Pedidos PHP, com 3 Endpoints CodeIgniter e MySQL",
-      github: "https://github.com/danielbelle/api-orders",
-      demo: "https://www.youtube.com/watch?v=G1Brhqz-PqM"
+      img: `${Proj6}`,
+      name: "tailwindCSS ReacJS Landing Page",
+      github: "https://github.com/danielbelle/financial-page-rectjs",
+      demo: "https://financial-page-rectjs-tailwindcss.vercel.app/"
     },
     {
       key: '4',
@@ -49,6 +50,13 @@ function Projects() {
       name: "Search Bar Integrado com API",
       github: "https://github.com/danielbelle/search-bar-API",
       demo: "https://search-bar-api.vercel.app/"
+    },
+    {
+      key: '6',
+      img: `${Proj3}`,
+      name: "CRUD Pedidos PHP, com 3 Endpoints CodeIgniter e MySQL",
+      github: "https://github.com/danielbelle/api-orders",
+      demo: "https://www.youtube.com/watch?v=G1Brhqz-PqM"
     }
   ];
 
